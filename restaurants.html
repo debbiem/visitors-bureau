@@ -1,7 +1,11 @@
-<html><body>
-  <p>the following is a list of our town's best restaurants</p>
-  <ol><li><a href="">res1</a></li>
-    <li>res2</li>
-    <li>res3</li>
-  </ol>
-</body></html>
+<html><body><form action="favorites" method="PUT">
+  <ul>
+    <li><label for='rest1'>Acme</label><input type="checkbox" name='rest1' value='Acme' /></li>
+    <li>Lantern</li>
+    <li>Tallula's</li>
+
+  </ul>
+  <input type="submit" name="save_data" value="Save my restaurants" />
+</form>
+</body>
+</html>
