@@ -1,7 +1,12 @@
 <html><body>
-  <p>the following is a list of our towns best nightclubs</p>
-  <ol><li><a href="">club1</a></li>
-    <li>club2</li>
-    <li>club3</li>
-  </ol>
+  <p>the following is a list of our town's best clubs</p>
+  <form action="favorites" method="PATCH">
+  <ul>
+    <li><label for='bar1'>Legends</label><input type="checkbox" name='club1' value='legends' /></li>
+    <li>Flojo</li>
+    <li>CHUG</li>
+
+  </ul>
+  <input type="submit" name="save_data" value="Save to favorites" />
+</form>
 </body></html>
