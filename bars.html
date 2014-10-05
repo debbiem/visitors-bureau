@@ -1,7 +1,12 @@
 <html><body>
-  <p>the following is a list of our towns best bars</p>
-  <ol><li><a href="">bar1</a></li>
-    <li>bar2</li>
-    <li>bar3</li>
-  </ol>
+  <p>the following is a list of our town's best bars</p>
+  <form action="favorites" method="PUT">
+  <ul>
+    <li><label for='bar1'>OCSC</label><input type="checkbox" name='rest1' value='Acme' /></li>
+    <li>Bowbarr</li>
+    <li>Beer Study</li>
+
+  </ul>
+  <input type="submit" name="save_data" value="Save my bars" />
+</form>
 </body></html>
