@@ -13,7 +13,9 @@ for visitor:
             
             a GET to a favorites list returns a list of links to individual business resources, or the message No favorites yet.              status code is 200 OK.
         
-            a PATCH occurs to add a business or event to the user's favorites list, status code 200 or 204 occurs. 
+            a PATCH occurs to add a business or event to the user's favorites list, status code 200 or 204 occurs.
+            
+            a GET to events calendar returns a 200OK
 
 For employee/webmaster:
 POST to Visitors Bureau business add/edit page returns the message Created business {business-name} with the URI of the new      business in the Location HTTP header, and a 201 Created status code. If the POSTed data is missing some required                  information (e.g. the business name), it returns the message business's name is required with a 400 Bad Request status             code.
