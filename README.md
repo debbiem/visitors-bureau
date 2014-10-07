@@ -1,6 +1,6 @@
 visitors-bureau
 ===============
-START from index.html. from there you'll have three options- login (visitor), login (employee, slightly hidden lowerleft of screen); or register. emploggedin.html is the employee mainpage. Limited functionality is simulated for the logged in visitor and logged in employee.
+START from index.html. from there you'll have three options- login (visitor), login (employee, slightly hidden lowerleft of screen); or register (as visitor) and then login. You don't need to enter data for employee and visitor login right now; just simply click the login buttons. emploggedin.html is the employee mainpage, and indexloggedin.html is the visitor mainpage. Limited functionality is simulated for the logged in visitor and logged in employee. Both experiences assume you're logged in in terms of how the different pages react.
 
 Deliverable #1: For each method supported by each resource in your service, specify what kinds of representation (if any) it requires, and what kinds of representations, including status codes, it might return. Be sure to consider possible error conditions. Add this specification to your repository.
 
