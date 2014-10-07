@@ -4,10 +4,11 @@ Deliverable #1: For each method supported by each resource in your service, spec
 
 List of rel and class attributes
 
-rel
+    rel
     edit-form
     used in employee view to indicate that forms can be used for editing
-class
+    
+    class
     menu
     indicates a menu class for which specific styling will be applied
     
