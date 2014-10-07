@@ -1,5 +1,7 @@
 visitors-bureau
 ===============
+START from index.html. from there you'll have three options- login (visitor), login (employee, slightly hidden lowerleft of screen); or register. Limited functionality is simulated for the logged in user and logged in employee.
+
 Deliverable #1: For each method supported by each resource in your service, specify what kinds of representation (if any) it requires, and what kinds of representations, including status codes, it might return. Be sure to consider possible error conditions. Add this specification to your repository.
 
 For both visitors and employees: GET to the visitors bureau protected resource returns 401 Unauthorized response code, including a response header indicating what kind of credential is needed (e.g. a username/password); Client makes the GET request again, this time with the credential in a request header (metadata field); If the credentials are invalid, the server responds with 401
