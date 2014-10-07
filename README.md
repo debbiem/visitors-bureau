@@ -11,4 +11,21 @@ class
     menu
     indicates a menu class for which specific styling will be applied
     
+    business_body
+    indicates the main portion of a business
+    
+    business_name
+    name of the business to be styled and called according to specification
+    
+    business
+    indicates a list item type "business"- all types of businesses- shops, bars, clubs, and restaurants- are included here.
+    
+    event_body
+    indicates the event information will be included here
+    
+    event_name
+    to be called/styled according to specification
+    
+    
+
     
