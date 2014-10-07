@@ -1,6 +1,6 @@
 visitors-bureau
 ===============
-START from index.html. from there you'll have three options- login (visitor), login (employee, slightly hidden lowerleft of screen); or register. Limited functionality is simulated for the logged in user and logged in employee.
+START from index.html. from there you'll have three options- login (visitor), login (employee, slightly hidden lowerleft of screen); or register. Limited functionality is simulated for the logged in visitor and logged in employee.
 
 Deliverable #1: For each method supported by each resource in your service, specify what kinds of representation (if any) it requires, and what kinds of representations, including status codes, it might return. Be sure to consider possible error conditions. Add this specification to your repository.
 
