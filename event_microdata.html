@@ -1,21 +1,25 @@
 <!doctype html>
+<html><body itemscope itemtype="http://schema.org/Event"
+                vocab="http://schema.org/">
 <link rel="alternate" type="application/json" href="{{ events }}.json">
 <title>{{ event.name }}</title>
 <form class="event-editor" enctype="application/json" method="patch">
 Name:
-<input type="text" name="name" value={{ events.name }}><br>
+<input type="text" name="name" itemprop="name" value={{ events.name }}><br>
 <!--do we want to include venues...? some events might not have a venue-->
 Venue:
-<input type="text" name="venue" value={{ events.venue }}><br>
+<input type="text" name="venue" itemtype="Place" value={{ events.venue }}><br>
 Location:
-<input type="text" name="location" value={{ events.location }}><br>
+<input type="text" name="location" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" value={{ events.location }}><br>
 Date:
-<input type="text" name="date" value={{ events.date }}><br>
+<input type="text" name="date" itemprop="startDate" value={{ events.date }}><br>
 Time:
-<input type="text" name="time" value={{ events.time }}><br>
+<input type="text" name="time" itemprop="doorTime" itemtype="http://schema.org/DateTime" value={{ events.time }}><br>
 Phone:
-<input type="text" name="phone" value={{ events.phone }}><br>
+<input type="text" name="phone" itemscope itemprop="telephone" itemtype="Text" value={{ events.phone }}><br>
 Description:
-<input type="text" name="description" value={{ events.description }}><br>
+<input type="text" name="description" itemprop="description" value={{ events.description }}><br>
 <input class="update" type="submit" value="update event">
 </form>
+</body>
+</html>
