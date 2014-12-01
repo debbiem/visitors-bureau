@@ -1,4 +1,6 @@
 <!doctype html>
+<html><body itemscope itemtype="http://schema.org/LocalBusiness"
+                vocab="http://schema.org/">
 <link rel="alternate" type="application/json" href="{{ request.path }}.json">
 <title>All Businesses</title>
 <a href="{{ url_for('businesslist') }}?sort-by=category">sort by category</a>
@@ -21,31 +23,31 @@
 </ol>
 <form class="business-editor" action="{{ url_for('businesslist') }}" method="post">
   <label>Name
-    <input name="name" type="text">
+    <input name="name" itemprop="legalName" type="text">
   </label>
   <br>
   <label>Location
-    <input name="location" type="text">
+    <input name="location" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" type="text">
   </label>
   <br>
   <label>URL
-    <input name="URL" type="text">
+    <input name="URL" itemprop="url" type="text">
   </label>
   <br>
    <label>Phone
-    <input name="phone" type="text">
+    <input name="phone" itemprop="telephone" type="text">
   </label>
   <br>
   <label>Hours
-    <input name="hours" type="text">
+    <input name="hours" itemprop="openingHours" itemtype="http://schema.org/Duration" type="text">
   </label>
   <br>
   <label>Rating
-    <input name="rating" type="text">
+    <input name="rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating" itemprop="ratingValue" itemprop="reviewCount" type="text">
   </label>
   <br>
   <label>Description
-    <textarea name="description"></textarea>
+    <textarea name="description" itemprop="description" itemtype="http://schema.org/text"></textarea>
   </label>
   <br>
   <label>Category
@@ -53,4 +55,5 @@
   </label>
   <input class="create" type="submit" value="create new business">
 </form>
-
+</body>
+</html>
